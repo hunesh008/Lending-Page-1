@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+ 
+    
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width: 37%;
+}
+
+#right{
+    height: 100%;
+    width: 63%;
+    background-color: royalblue;
+}
+
+#rtop{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+}
+
+#rbottam{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://media.istockphoto.com/id/1152750103/photo/sliced-alphonso-mangoes.jpg?s=1024x1024&w=is&k=20&c=icvyeqMLlk1M7sv4Vpjtn1qnXzbcNmvfUpJgjWOfI7I=)
+
+}
+
+#rtopl{
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://plus.unsplash.com/premium_photo-1691096628149-fe8162c61e87?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+}
+
+#rtopr{
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D;)
+
+}
+
+#lnav{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 226);
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+
+#lnavr i {
+    color: rgb(25, 144, 236);
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1{
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size:100px
+    
+    
+}
+
+#textcenter p {
+    font-size: 15px;
+    opacity: .7;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom:30px;
+}
+
+#textcenter a {
+    text-decoration: none;
+    color: black;
+    opacity: .6;
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+}
+
+@media (max-width :500px) {
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+    
+}
